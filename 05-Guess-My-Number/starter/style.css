@@ -14,7 +14,7 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
-  background-color: #222;
+  background-color: #a52a2a;
   /* background-color: #60b347; */
 }
 
@@ -116,4 +116,56 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/* MEDIA QUERIES FOR MOBILE */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    height: 25vh;
+  }
+
+  main {
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    top: 40%;
+  }
+
+  .number {
+    font-size: 4rem;
+    width: 10rem;
+    padding: 2rem 0;
+  }
+
+  .guess {
+    font-size: 3rem;
+    width: 20rem;
+    padding: 2rem;
+  }
+
+  .btn {
+    font-size: 2.5rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .between,
+  .again {
+    font-size: 1.4rem;
+    top: 1rem;
+  }
 }
